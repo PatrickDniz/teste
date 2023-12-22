@@ -1,0 +1,1 @@
+const historic=JSON.parse(localStorage.getItem("historic"))||[],levelNow=historic.length+1,words=["API","CSS","CPU","SQL","VPN","SDK","GIT","PUT","CLI","RAM","XML","LAN","DNS","NPM","FTP","GET","HTML","CSS3","REST","JSON","SOAP","AJAX","POST","WiFi","Auth","SMTP","IMAP","HTTP","SOLID"],word=words[historic.length];word?Game(word).start():console.log("zerou o game");

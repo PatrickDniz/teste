@@ -1,0 +1,63 @@
+@import './abstracts/index.scss';
+
+.game{
+  &_top{
+    width: 1366px;
+    max-width: calc(100% - 20px);
+    padding-inline: 10px;
+    margin: 0 auto;
+    &__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80px;
+      gap: 16px;
+    }
+    &__phase,&__historic{
+      background-color: $secondaryBackground;
+      border: 1px solid rgba($primary, .1);
+      border-radius: 5px;
+      padding: 16px;
+      color: $text;
+      span{
+        color: $primary;
+      }
+    }
+    &__historic{
+      cursor: pointer;
+      color: $text;
+    }
+    &__historic:hover{
+      color: $primary;
+    }
+  }
+  &_bottom{
+    width: 1366px;
+    max-width: calc(100% - 20px);
+    padding-inline: 10px;
+    margin: 0 auto;
+    &__board{
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      margin: 0 auto;
+      gap: 8px;
+      padding-bottom: 40px;
+      &--row{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 8px;
+      }
+      &--letter{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background-color: $secondaryBackground;
+        border: 1px solid $primary;
+      }
+    }
+  }
+}
